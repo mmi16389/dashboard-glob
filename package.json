@@ -1,0 +1,18 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+		"packages/*"
+	],
+  "scripts": {
+		"prepublishOnly": "lerna run build",
+		"dev": "lerna run playground --stream",
+		"lint": "lerna run lint --stream",
+    "test:e2e": "lerna run test:e2e --stream",
+    "test:unit": "lerna run test:unit --stream",
+		"build": "lerna run build --stream"
+	},
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
