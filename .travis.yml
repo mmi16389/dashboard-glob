@@ -19,3 +19,12 @@ jobs:
       name: 'Lint'
       script:
         - yarn lint
+
+    - stage: 'Test unit and  e2e'
+      name: 'Test'
+      before_script:
+        - yarn global add codecov
+      script:
+        - yarn test:unit & yarn test:e2e
+      after_script:
+        - codecov
