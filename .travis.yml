@@ -17,10 +17,18 @@ jobs:
       script:
         - yarn lint
     - stage: 'Test unit'
-      name: 'Test'
+      name: 'Test Unit'
       script:
         - yarn test:unit
     - stage: 'E2E testing'
-      name: 'Test'
+      name: 'Test Cypress'
       script:
         - yarn test:e2e
+    - stage: 'Deploy'
+      name: 'Deploy app'
+      before_script:
+        - yarn build
+      skip_cleanup: true
+      provider: firebase
+      token:
+        secure: ""
