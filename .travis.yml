@@ -9,6 +9,7 @@ cache:
 
 install:
   - yarn --frozen-lockfile --non-interactive
+  - npm ci
 
 jobs:
   include:
@@ -21,7 +22,6 @@ jobs:
       name: 'Test'
       before_script:
         - yarn global add codecov
-        - npm run start:ci
       script:
         - yarn test:e2e
       after_script:
