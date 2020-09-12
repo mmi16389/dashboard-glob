@@ -7,7 +7,7 @@ cache:
     - node_modules
 
 install:
-  - npm install
+  - yarn --frozen-lockfile --non-interactive
 
 jobs:
   include:
