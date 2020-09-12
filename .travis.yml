@@ -24,7 +24,10 @@ jobs:
       name: 'Test Cypress'
       script:
         - yarn test:e2e
-    - stage: 'Deploy'
-      name: 'Deploy app'
+    - stage: 'Build and Deloy'
+      name: 'Build app'
       script:
         - yarn build
+      after_success:
+        - npm install -g firebase-tools
+        - firebase deploy --token "$FIREBASE_TOKEN"
