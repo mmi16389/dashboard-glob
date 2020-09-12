@@ -21,6 +21,6 @@ jobs:
       before_script:
         - yarn global add codecov
       script:
-        - yarn test:unit & yarn test:e2e
+        - yarn test:e2e
       after_script:
         - codecov
