@@ -9,6 +9,9 @@
     "test:e2e": "vue-cli-service test:e2e --headless",
     "lint": "vue-cli-service lint"
   },
+  "resolutions": {
+    "cypress": "3.4.1"
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
