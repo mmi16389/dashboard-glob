@@ -5,6 +5,7 @@ cache:
   yarn: true
   directories:
     - node_modules
+    - ~/.cache
 
 install:
   - yarn --frozen-lockfile --non-interactive
@@ -19,7 +20,7 @@ jobs:
     - stage: 'Test unit and  e2e'
       name: 'Test'
       before_script:
-        - yarn global add codecov & wait-on http://localhost:8080
+        - yarn global add codecov && wait-on http://localhost:8080
       script:
         - yarn test:e2e
       after_script:
