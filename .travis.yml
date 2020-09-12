@@ -26,9 +26,5 @@ jobs:
         - yarn test:e2e
     - stage: 'Deploy'
       name: 'Deploy app'
-      before_script:
+      script:
         - yarn build
-      skip_cleanup: true
-      provider: firebase
-      token:
-        secure: ""
