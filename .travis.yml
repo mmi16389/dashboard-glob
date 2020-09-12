@@ -12,7 +12,6 @@ before_install:
 
 install:
   - yarn --frozen-lockfile --non-interactive
-  - npm install
 
 jobs:
   include:
