@@ -32,6 +32,4 @@ jobs:
         - cd packages/web/login-admin
         - npm install -g firebase-tools
         - firebase deploy --token "$FIREBASE_TOKEN"
-      branches:
-        only:
-        - web
+      if: branch = web
