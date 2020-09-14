@@ -1,55 +1,32 @@
 <template>
-  <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-         <h2>Test Cypress</h2>
-      </div>
-    </v-app-bar>
-
-    <v-main>
-      <transition name="fade" mode="out-in">
-        <!-- Load the component defined in the router for the current route -->
-        <RouterView />
-      </transition>
-    </v-main>
-  </v-app>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <router-view />
+  </div>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+import { Component } from 'vue-property-decorator'
 
-<style scoped>  /* "scoped" attribute limit the CSS to this component only */
-  .login {
-    margin-top: 40px;
-  }
-  input {
-    margin: 10px 0;
-    width: 20%;
-    padding: 15px;
-  }
-  button {
-    margin-top: 20px;
-    width: 10%;
-    cursor: pointer;
-  }
-  p {
-    margin-top: 40px;
-    font-size: 13px;
-  }
-  p a {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  .social-button {
-    width: 75px;
-    background: white;
-    padding: 10px;
-    border-radius: 100%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-    outline: 0;
-    border: 0;
-  }
-  .social-button:active {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-  }
-  .social-button img {
-    width: 100%;
-  }
-  </style>
+@Component
+export default class App extends Vue {}
+</script>
+<style>
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style>
