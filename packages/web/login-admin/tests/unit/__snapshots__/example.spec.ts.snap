@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Login.vue renders properly 1`] = `
-<div class="login">
+<div class="login" style="border: 1px solid rgba(0,0,0,.1); width: 25%; margin: auto; background: white;">
+  <div style="margin-top: 40px;"></div> <img src="./../assets/xdevopps.png">
+  <div style="margin-top: 25px;"></div>
   <h3>Sign In</h3> <input type="text" placeholder="Email"> <br> <input type="password" placeholder="Password"> <br> <button>Connection</button>
   <p>
     You don't have an account ? You can

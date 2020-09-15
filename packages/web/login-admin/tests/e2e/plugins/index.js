@@ -8,6 +8,7 @@
 
 // /* eslint-disable import/no-extraneous-dependencies, global-require */
 // const webpack = require('@cypress/webpack-preprocessor')
+// import '@cypress/code-coverage/support'
 
 module.exports = (on, config) => {
   // on('file:preprocessor', webpack({
