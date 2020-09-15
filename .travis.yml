@@ -18,12 +18,16 @@ jobs:
         - yarn lint
     - stage: 'Test unit'
       name: 'Test Unit'
+      before_script:
+       - yarn global add codecov
       script:
         - yarn test:unit
     - stage: 'E2E testing'
       name: 'Test Cypress'
       script:
         - yarn test:e2e
+      after_script:
+        - codecov
     - stage: 'Build and Deloy'
       name: 'Build app'
       script:
