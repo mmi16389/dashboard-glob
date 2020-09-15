@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+  <div id="ctn-app">
     <router-view />
   </div>
 </template>
@@ -12,12 +11,17 @@ import { Component } from 'vue-property-decorator'
 export default class App extends Vue {}
 </script>
 <style>
-#app {
+#ctn-app {
+  position: absolute;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  background: #f4f4f4;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 #nav {
   padding: 30px;

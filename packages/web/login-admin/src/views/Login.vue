@@ -1,5 +1,8 @@
 <template>
-  <div class="login">
+  <div class="login" style="border:1px solid rgba(0,0,0,.1);width:25%;margin:auto;background:white">
+    <div style="margin-top:40px;"></div>
+    <img src="./../assets/xdevopps.png" />
+    <div style="margin-top:25px;"></div>
     <h3>Sign In</h3>
     <input type="text" v-model="email" placeholder="Email" />
     <br />
@@ -47,20 +50,24 @@ export default class Login extends Vue {
 <style scoped>
 /* "scoped" attribute limit the CSS to this component only */
 .login {
-  margin-top: 40px;
+   position: absolute;
+   top: 10%;
+   left:36.33%
 }
 input {
   margin: 10px 0;
-  width: 20%;
+  width: 80%;
   padding: 15px;
+  border:1px solid rgba(0,0,0,.1);
 }
 button {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 10%;
   cursor: pointer;
 }
 p {
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   font-size: 13px;
 }
 p a {

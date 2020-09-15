@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1600090094530" clover="3.2.0">
+  <project timestamp="1600090094530" name="All files">
+    <metrics statements="11" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1" elements="15" coveredelements="9" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+    <file name="Login.vue" path="/home/mmaryvon/Documents/projects/public/cnamts/github/dashboard-glob/packages/web/login-admin/src/views/Login.vue">
+      <metrics statements="11" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="33" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="41" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
