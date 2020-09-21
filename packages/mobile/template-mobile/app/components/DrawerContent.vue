@@ -63,7 +63,8 @@ declare module "vue-property-decorator" {
     interface Vue {
       $navigateTo(...args);
     }
-}// vue-extend.ts
+}
+
 @Component({
   components: {
     Home,

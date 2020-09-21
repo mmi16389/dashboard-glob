@@ -2,11 +2,9 @@ import Vue from "nativescript-vue";
 import App from "./components/App.vue";
 import Home from "./components/Home.vue";
 import DrawerContent from "./components/DrawerContent.vue"; 
+import RadSideDrawer from "nativescript-ui-sidedrawer/vue"
 
-Vue.registerElement(
-  'RadSideDrawer',
-  () => require('nativescript-ui-sidedrawer').RadSideDrawer
-)
+Vue.use(RadSideDrawer);
 
 Vue.config.silent = (TNS_ENV === 'production');
 
