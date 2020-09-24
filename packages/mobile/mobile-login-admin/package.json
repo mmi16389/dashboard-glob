@@ -12,10 +12,6 @@
     "run": "tns run",
     "e2e": "node ./node_modules/nativescript-dev-appium/check-dev-deps.js &&  mocha --opts ./e2e/config/mocha.opts "
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mmi16389/mobile-login-admin.git"
-   },
   "dependencies": {
     "@nativescript/theme": "~2.3.0",
     "nativescript-ui-sidedrawer": "~8.0.0",
@@ -80,5 +76,8 @@
     }
   },
   "readme": "NativeScript Application",
-  "repository": "<fill-your-repository-here>"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmi16389/mobile-login-admin.git"
+   }
 }
