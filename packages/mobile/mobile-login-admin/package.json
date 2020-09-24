@@ -76,8 +76,9 @@
     }
   },
   "readme": "NativeScript Application",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mmi16389/mobile-login-admin.git"
-   }
+   "repository" : {
+    "type" : "git",
+    "url": "ssh://git@github.com:mmi16389/dashboard-glob.git",
+    "directory": "packages/mobile"
+  }
 }
