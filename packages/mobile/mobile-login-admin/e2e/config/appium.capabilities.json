@@ -79,8 +79,8 @@
     "android28": {
         "platformName": "Android",
         "platformVersion": "28",
-        "deviceName": "Pixel_2_API_28",
-        "avd": "Pixel_2_API_28",
+        "deviceName": "Emulator-Api28-Google",
+        "avd": "Emulator-Api28-Google",
         "lt": 60000,
         "newCommandTimeout": 720,
         "noReset": false,
