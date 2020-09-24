@@ -12,17 +12,6 @@
   "description": "NativeScript Application",
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
-  "scripts": {
-    "lint": "vue-cli-service lint",
-    "debug:android": "tns debug android --bundle",
-    "debug:ios": "tns debug ios --bundle",
-    "preview": "tns preview",
-    "build:android": "tns build android --bundle",
-    "build:ios": "tns build ios --bundle",
-    "run:android": "tns run android --bundle",
-    "run:ios": "tns run ios --bundle",
-    "e2e": "node ./node_modules/nativescript-dev-appium/check-dev-deps.js &&  mocha --opts ./e2e/config/mocha.opts "
-  },
   "dependencies": {
     "nativescript-vue": "~2.4.0",
     "rxjs": "^6.5.0",
